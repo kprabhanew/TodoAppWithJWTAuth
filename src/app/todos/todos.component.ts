@@ -71,7 +71,7 @@ export class TodosComponent implements OnInit {
   }
 
   public doSignOut() {
-    console.log('%c TodosComponent -> onRemoveTodo : ', 'background: #093145; color: #FFF', todo);
+    console.log('%c TodosComponent -> doSignOut : ', 'background: #093145; color: #FFF');
     this.auth.doSignOut();
     this.router.navigate(['/sign-in']);
   }
