@@ -16,6 +16,7 @@ export class TodosResolver implements Resolve<Observable<Todo[]>> {
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
   ): Observable<Todo[]> {
+    console.log('Resolver');
     return this.todoDataService.getAllTodos();
   }
 }

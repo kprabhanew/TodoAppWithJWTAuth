@@ -7,6 +7,7 @@ export class SessionService {
   public name: string;
 
   constructor() {
+    console.log('Session Service CONSTRUCTOR');
   }
 
   public destroy(): void {
